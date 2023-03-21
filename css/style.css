@@ -88,20 +88,26 @@ input,button{
     color: #222;
 }
 
-.register-page .register ul li:nth-child(1) a svg:hover{
-    background-color: rgb(0, 89, 255);
-    color: #fff;
-}
-.register-page .register ul li:nth-child(1) a svg:hover{
-    background-color: rgb(0, 89, 255);
-    color: #fff;
-}
-.register-page .register ul li:nth-child(1) a svg:hover{
-    background-color: rgb(0, 89, 255);
-    color: #fff;
+.register-page .register ul li{
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 
-
+.register-page .register ul li:nth-child(1) a svg:hover{
+    background-color: #4267B2;
+    color: #fff;
+}
+.register-page .register ul li:nth-child(2) a svg:hover{
+    background-color: #DB4437;
+    color: #fff;
+}
+.register-page .register ul li:nth-child(3) a svg:hover{
+    background-color: #0077B5;
+    color: #fff;
+}
 
 .register-page .register ul a svg{
     width: 50px;
@@ -113,6 +119,11 @@ input,button{
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     padding: 10px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 
 .register-page .register h5{
@@ -139,7 +150,7 @@ input,button{
     width: 95%;
     padding: 10px;
     border: none;
-    border-bottom: 1px solid #999;
+    border-bottom: 2px solid #999;
     outline: none;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
@@ -149,13 +160,14 @@ input,button{
 }
 
 .register-page .register form .form-item input:focus{
-    border-bottom: 1px solid #3BB397;
+    border-bottom: 2px solid #3BB397;
 }
 
 .register-page .register form input[type=submit]{
     padding: 10px;
     width: 45%;
     border: none;
+    border: 2px solid transparent;
     background-color: #3BB397;
     color: #fff;
     font-size: 16px;
@@ -165,6 +177,13 @@ input,button{
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
     margin-top: 20px;
+}
+
+.register-page .register form input[type=submit]:hover{
+    background-color: #fff;
+    color: #3BB397;
+    border: 2px solid #3BB397;
+
 }
 
 .register-page .auth-login{
@@ -213,4 +232,9 @@ input,button{
     outline: none;
     cursor: pointer;
     text-decoration: none;
+}
+
+.register-page .auth-login .login-content a:hover{
+    background-color: #fff;
+    color: #3BB397;
 }
